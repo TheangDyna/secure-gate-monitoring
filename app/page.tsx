@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle
 } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -42,10 +43,12 @@ export default function HomePage() {
                 </p>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" size="sm">
-                  Open Display
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <Link href="/dashboard/fullscreen" className="w-full">
+                  <Button className="w-full" size="sm">
+                    Open Display
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
 
@@ -64,10 +67,12 @@ export default function HomePage() {
                 </p>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" size="sm" variant="outline">
-                  Admin Access
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <Link href="/admin/dashboard" className="w-full">
+                  <Button className="w-full" size="sm" variant="outline">
+                    Admin Access
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
 
@@ -86,10 +91,12 @@ export default function HomePage() {
                 </p>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" size="sm" variant="outline">
-                  Open Kiosk
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <Link href="/kiosk" className="w-full">
+                  <Button className="w-full" size="sm" variant="outline">
+                    Open Kiosk
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           </div>
